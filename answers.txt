@@ -1,0 +1,23 @@
+Brief Explanation of Each Component:
+
+- app.py: This file defines a simple Flask API. It directly trains the regression model on startup and provides a /predict endpoint for predicting stakeholder engagement scores based on input values for W (treatment) and X (sustainability spending).
+- Dockerfile: The Dockerfile specifies the environment needed to run the application, including installing dependencies from requirements.txt. It ensures consistent environment setup across different machines.
+- Containerization: Containerization improves reproducibility by isolating the application and its dependencies into a portable container, ensuring the app behaves consistently across development, testing, and production.
+
+Q1.2: Report the estimated ATE (τ̂) and its statistical significance:
+
+- Estimated ATE (τ̂): -9.1057
+- p-value for τ̂: 0.000
+- Interpretation: Participation in the carbon offset program is associated with an approximately 9.1-point lower stakeholder engagement score after controlling for sustainability spending. The result is statistically significant.
+
+Q1.3: Under what assumptions τ̂ can be interpreted causally:
+
+- Stable Unit Treatment Value Assumption (SUTVA) holds: No interference between units.
+- Random treatment assignment (or unconfoundedness) holds: Treatment is independent of potential outcomes, possibly conditional on covariates.
+- Correct model specification: No omitted variable bias.
+- Overlap (common support): Both treated and untreated units exist for each covariate level.
+
+Q2.3: Test your API and report the predicted engagement score:
+
+- Input: W = 1, X = 20
+- Predicted engagement score (Ŷi): Approximately 117.16

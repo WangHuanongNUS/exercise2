@@ -7,7 +7,7 @@ Brief Explanation of Each Component:
 Q1.2: Report the estimated ATE (τ̂) and its statistical significance:
 
 - Estimated ATE (τ̂): -9.1057
-- p-value for τ̂: 0.000
+- p-value for τ̂: 0.0004
 - Interpretation: Participation in the carbon offset program is associated with an approximately 9.1-point lower stakeholder engagement score after controlling for sustainability spending. The result is statistically significant.
 
 Q1.3: Under what assumptions τ̂ can be interpreted causally:
